@@ -5,6 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Order } from "../lib/types";
 import { formatCurrency, formatDate } from "../lib/utils";
+import { PaymentStatus } from "../lib/types";
 import { OrderStatusBadge, PaymentStatusBadge } from "./StatusBadge";
 
 interface OrderTableProps {
