@@ -29,6 +29,16 @@ import {
   Cell,
 } from "recharts";
 
+// Import any necessary types or interfaces
+interface Order {
+  id: string;
+  status: string;
+  total_amount: number;
+  created_at: string;
+  payment_status: string;
+  // Add other fields that exist in your orders
+}
+
 /**
  * Order stats component to display metrics with improved styling
  * @param {object} props
