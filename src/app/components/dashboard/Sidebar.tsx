@@ -155,7 +155,7 @@ export default function Sidebar() {
                         <ChevronRight size={16} />
                       )}
                     </button>
-                    {isOpen && (
+                    {isOpen && item.subItems && (
                       <ul className="ml-8 mt-1 space-y-1">
                         {item.subItems.map((subItem) => {
                           const isSubActive = pathname === subItem.href;
